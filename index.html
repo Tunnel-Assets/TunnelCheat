@@ -3,119 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tunnel Cheat | The Modern Edge</title>
+    <title>Tunnel Cheat | Home</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header class="navbar">
         <h1 class="logo">Tunnel Cheat 🛠️</h1>
         <nav>
             <ul>
-                <li><a href="#calculator">Calculator</a></li>
-                <li><a href="#ai-links">AI Links</a></li>
-                <li><a href="#file-system">Tests & Assignments</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+                <li><a href="file_explorer.html">Tests & Assignments</a></li>
+                <li><a href="index.html#ai-links">AI Links</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="calculator" class="card">
-            <h2>Calculators</h2>
-            <div class="calc-tabs">
-                <button class="calc-tab active">Normal Calc</button>
-                <button class="calc-tab">Alg Calc</button>
-            </div>
-            <div class="calculator-ui">
-                <div class="display">0</div>
-                <div class="buttons">
-                    <button class="btn fn">AC</button>
-                    <button class="btn fn">±</button>
-                    <button class="btn fn">%</button>
-                    <button class="btn op">/</button>
-                    <button class="btn num">7</button>
-                    <button class="btn num">8</button>
-                    <button class="btn num">9</button>
-                    <button class="btn op">x</button>
-                    <button class="btn num">4</button>
-                    <button class="btn num">5</button>
-                    <button class="btn num">6</button>
-                    <button class="btn op">-</button>
-                    <button class="btn num">1</button>
-                    <button class="btn num">2</button>
-                    <button class="btn num">3</button>
-                    <button class="btn op">+</button>
-                    <button class="btn num zero">0</button>
-                    <button class="btn num">.</button>
-                    <button class="btn op">=</button>
-                </div>
+        <section id="welcome" class="card" style="max-width: 600px; text-align: center;">
+            <h2>Welcome to the Tunnel Cheat Portal</h2>
+            <p>Your modern edge for academic needs.</p>
+            <p style="margin-top: 30px;">Use the navigation links above to access the tools.</p>
+            <div style="display: flex; justify-content: space-around; margin-top: 40px;">
+                <a href="calculator.html" class="calc-tab active" style="padding: 10px 20px; border-radius: 5px; font-weight: bold;">Go to Calculator</a>
+                <a href="file_explorer.html" class="calc-tab" style="padding: 10px 20px; border-radius: 5px; font-weight: bold;">Go to File Explorer</a>
             </div>
         </section>
 
-        <section id="ai-links" class="card">
+        <section id="ai-links" class="card" style="margin-top: 20px;">
             <h2>Top AI Links</h2>
             <ul class="ai-list">
-                <li><a href="#">Best AI Assistant Link 1</a></li>
-                <li><a href="#">Fast Solver AI Link 2</a></li>
-                <li><a href="#">Essay Generator AI Link 3</a></li>
-                <li><a href="#">Code/Math Helper AI Link 4</a></li>
+                <li><a href="https://gemini.google.com/" target="_blank">Gemini <span class="link-icon">↗</span></a></li>
+                <li><a href="https://chatgpt.com" target="_blank">ChatGPT <span class="link-icon">↗</span></a></li>
+                <li><a href="https://apps.apple.com/us/app/gauth-ai-study-companion/id1542571008" target="_blank">Gauth (iOS App Store) <span class="link-icon">↗</span></a></li>
+                <li><a href="https://play.google.com/store/search?q=Gauth&c=apps" target="_blank">Gauth (Google Play Store) <span class="link-icon">↗</span></a></li>
             </ul>
-        </section>
-
-        <section id="file-system" class="card">
-            <h2>Tests & Assignments File System</h2>
-            <div class="filesystem-container">
-                <div class="folder root-folder">
-                    <span class="folder-name">📁 hayfield</span>
-                    <div class="folder grade-folder">
-                        <span class="folder-name">|-- 📁 7th Grade</span>
-                        <div class="folder subject-folder">
-                            <span class="folder-name">|---- 📁 Social Studies</span>
-                            <div class="folder content-folder">
-                                <span class="folder-name">|------ 📁 Tests</span>
-                                <span class="folder-name">|------ 📁 Assignments</span>
-                                <span class="folder-name">|------ 📁 Homework</span>
-                            </div>
-                        </div>
-                        <div class="folder subject-folder">
-                            <span class="folder-name">|---- 📁 Math</span>
-                            <div class="folder content-folder">
-                                <span class="folder-name">|------ 📁 Tests</span>
-                                <span class="folder-name">|------ 📁 Assignments</span>
-                                <span class="folder-name">|------ 📁 Homework</span>
-                            </div>
-                        </div>
-                        <div class="folder subject-folder">
-                            <span class="folder-name">|---- 📁 English</span>
-                            <div class="folder content-folder">
-                                <span class="folder-name">|------ 📁 Tests</span>
-                                <span class="folder-name">|------ 📁 Assignments</span>
-                                <span class="folder-name">|------ 📁 Homework</span>
-                            </div>
-                        </div>
-                        <div class="folder subject-folder">
-                            <span class="folder-name">|---- 📁 Life Science</span>
-                            <div class="folder content-folder">
-                                <span class="folder-name">|------ 📁 Tests</span>
-                                <span class="folder-name">|------ 📁 Assignments</span>
-                                <span class="folder-name">|------ 📁 Homework</span>
-                            </div>
-                        </div>
-                        <div class="folder subject-folder">
-                            <span class="folder-name">|---- 📁 Art</span>
-                            <div class="folder content-folder">
-                                <span class="folder-name">|------ 📁 Tests</span>
-                                <span class="folder-name">|------ 📁 Assignments</span>
-                                <span class="folder-name">|------ 📁 Homework</span>
-                            </div>
-                        </div>
-                    </div>
-                    <span class="folder-name">|-- 📁 8th Grade (...)</span>
-                    <span class="folder-name">|-- 📁 9th Grade (...)</span>
-                    <span class="folder-name">|-- 📁 10th Grade (...)</span>
-                    <span class="folder-name">|-- 📁 11th Grade (...)</span>
-                    <span class="folder-name">|-- 📁 12th Grade (...)</span>
-                </div>
-            </div>
         </section>
     </main>
 
