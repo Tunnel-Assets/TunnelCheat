@@ -1,54 +1,32 @@
-/* CSS/ Root will be HTML */
+/* ... (existing styles) ... */
 
-/* ... (Existing :root variables and Base Styles remain the same) ... */
+/* --- FILE EXPLORER SPECIFIC STYLES --- */
 
-/* --- CALCULATOR SPECIFIC STYLES --- */
-/* ... (Existing .calc-tabs, .calc-tab, .calculator-ui, .display, .buttons, .btn styles remain the same) ... */
+/* ... (existing styles for .filesystem-container, .folder, .folder-name, .icon) ... */
 
-/* New Alg Calc Layout */
-.alg-buttons {
-    /* Updated grid for the advanced calculator */
-    grid-template-columns: repeat(7, 1fr); 
-    gap: 8px; /* Slightly tighter gap */
+.file-name {
+    display: flex;
+    align-items: center;
+    padding: 3px 0;
+    margin-left: 20px; /* Indent under the chapter folder */
+    color: #b0c4de; /* Lighter color for files */
+    cursor: pointer;
+    text-decoration: none; /* Files are links (<a>) now */
 }
 
-.alg-calc-layout {
-    max-width: 500px; /* Make the advanced calculator wider */
+.file-name .icon {
+    font-size: 1em;
+    color: #ffd700; /* Use a different color for file icon (📄) */
 }
 
-/* Styles for the new Algebraic buttons */
-.btn.func {
-    background-color: #555; /* Function buttons (sin, cos, log) */
-    font-size: 0.9em;
-    color: var(--text-light);
-}
-.btn.func:hover {
-    background-color: #777;
+.file-name:hover {
+    color: var(--primary-color);
+    background-color: rgba(0, 123, 255, 0.1);
+    border-radius: 4px;
 }
 
-.btn.const {
-    background-color: #4a4a4a; /* Constants (π, e) */
+/* Ensure the file name links are block elements for proper spacing and hover area */
+.folder-content > a.file-name {
+    display: block;
+    margin-bottom: 2px;
 }
-
-.btn.equal {
-    background-color: var(--success-color); /* Green equals sign */
-    color: var(--background-dark);
-}
-.btn.equal:hover {
-    background-color: #38c858;
-}
-
-/* Ensure existing zero style doesn't interfere with new layout */
-.alg-buttons .btn.op[style*="grid-column: span 4;"] {
-    grid-column: span 4;
-    border-radius: 34px; 
-    text-align: center;
-    padding-left: 15px; /* Center text again */
-}
-
-
-/* --- FILE EXPLORER SPECIFIC STYLES (Unchanged) --- */
-/* ... (File explorer styles remain the same) ... */
-
-/* --- Footer (Unchanged) --- */
-/* ... (Footer styles remain the same) ... */
