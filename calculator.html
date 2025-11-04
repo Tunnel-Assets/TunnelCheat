@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tunnel Cheat | Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body id="calculator-page">
+    <header class="navbar">
+        <h1 class="logo">Tunnel Cheat 🛠️</h1>
+        <nav>
+            <ul>
+                <li><a href="calculator.html">Calculator</a></li>
+                <li><a href="file_explorer.html">Tests & Assignments</a></li>
+                <li><a href="index.html#ai-links">AI Links</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="calculator" class="card">
+            <h2>Calculators</h2>
+            <div class="calc-tabs">
+                <button class="calc-tab active" onclick="document.getElementById('normal-calc').style.display='block'; document.getElementById('alg-calc').style.display='none';">Normal Calc</button>
+                <button class="calc-tab" onclick="document.getElementById('normal-calc').style.display='none'; document.getElementById('alg-calc').style.display='block';">Alg Calc</button>
+            </div>
+            
+            <div id="normal-calc" class="calculator-ui">
+                <input type="text" id="calc-display" class="display" value="0" readonly>
+                <div class="buttons">
+                    <button class="btn fn">AC</button>
+                    <button class="btn fn">±</button>
+                    <button class="btn fn">%</button>
+                    <button class="btn op">/</button>
+                    <button class="btn num">7</button>
+                    <button class="btn num">8</button>
+                    <button class="btn num">9</button>
+                    <button class="btn op">x</button>
+                    <button class="btn num">4</button>
+                    <button class="btn num">5</button>
+                    <button class="btn num">6</button>
+                    <button class="btn op">-</button>
+                    <button class="btn num">1</button>
+                    <button class="btn num">2</button>
+                    <button class="btn num">3</button>
+                    <button class="btn op">+</button>
+                    <button class="btn num zero">0</button>
+                    <button class="btn num">.</button>
+                    <button class="btn op">=</button>
+                </div>
+            </div>
+
+            <div id="alg-calc" class="alg-calc-placeholder" style="display: none;">
+                Algebraic Calculator Mode Activated.
+                <p>Functions and advanced solving features would be implemented here.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tunnel Cheat Project</p>
+    </footer>
+</body>
+</html>
