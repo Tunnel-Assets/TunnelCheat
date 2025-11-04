@@ -347,3 +347,36 @@ footer {
     display: block;
     margin-bottom: 2px;
 }
+
+/* ... (existing styles) ... */
+
+/* --- FILE EXPLORER SPECIFIC STYLES --- */
+
+/* ... (existing styles for .filesystem-container, .folder, .folder-name, .icon) ... */
+
+.file-name {
+    display: flex;
+    align-items: center;
+    padding: 3px 0;
+    margin-left: 20px; /* Indent under the chapter folder */
+    color: #b0c4de; /* Lighter color for files */
+    cursor: pointer;
+    text-decoration: none; /* Files are links (<a>) now */
+}
+
+.file-name .icon {
+    font-size: 1em;
+    color: #ffd700; /* Use a different color for file icon (📄) */
+}
+
+.file-name:hover {
+    color: var(--primary-color);
+    background-color: rgba(0, 123, 255, 0.1);
+    border-radius: 4px;
+}
+
+/* Ensure the file name links are block elements for proper spacing and hover area */
+.folder-content > a.file-name {
+    display: block;
+    margin-bottom: 2px;
+}
